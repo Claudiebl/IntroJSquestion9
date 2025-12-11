@@ -12,18 +12,19 @@ const jeu = {
     "./images/7.png",
     "./images/8.png",
     "./images/9.png",
-],
-    tentativeMax: 9,
-    tentativeCourante: 0,
+    ],
+
+    lettre : [a-z],
+
+    tentativeMax: 6,
+    Erreurs: 0,
     victoire: false,
 };
  
   // ======== SÉLECTEURS DOM ========
-  const mesImages = document.getElementById("mesImages");
-  const saisieUser = document.getElementById("saisieUser");
-  const msgTentative = document.getElementById("nbTentative");
-  const msgPlusOuMoins = document.getElementById("plusOUmoins");
-  const boutonValider = document.getElementById("boutonValide");
+  const afficheImage = document.getElementById("imgPendu");
+  const board = document.getElementById("board");
+  const lettreSelected = document.getElementById("boutonValide");
   const boutonRejouer = document.getElementById("boutonRejouer");
   const overlay = document.getElementById("overlay");
   const overlayContent = document.getElementById("overlay-content");

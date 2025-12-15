@@ -1,4 +1,4 @@
-export let words = [
+export let dico = [
     "abandonner",
     "abandonné",
     "abattoir",
